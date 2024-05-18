@@ -17,6 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from kmeansApp import views as kmeansViews
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('cluster/',kmeansViews.index)
 ]
